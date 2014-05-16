@@ -18,7 +18,7 @@ public class Msg {
 		atm.addListener(new DrawbackListener() {
 
 			@Override
-			public void donotify(DrawbackEvent event) {
+			public void update(DrawbackEvent event) {
 				Out.print("短信通知您，你取了" + event.getNumber() + "钱");
 			}
 		});

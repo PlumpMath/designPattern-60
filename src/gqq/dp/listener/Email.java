@@ -5,7 +5,7 @@ import gqq.dp.common.*;
 public class Email implements DrawbackListener {
 
 	@Override
-	public void donotify(DrawbackEvent event) {
+	public void update(DrawbackEvent event) {
 		Out.print("邮件通知您，你取了" + event.getNumber() + "钱");
 	}
 

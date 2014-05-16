@@ -1,5 +1,6 @@
 package gqq.dp.command;
 
+
 public class OpenCommand extends Command {
 
 	public OpenCommand() {

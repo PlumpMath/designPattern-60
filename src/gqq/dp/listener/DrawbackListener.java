@@ -8,5 +8,5 @@ package gqq.dp.listener;
  */
 public interface DrawbackListener {
 
-	void donotify(DrawbackEvent event);
+	void update(DrawbackEvent event);
 }

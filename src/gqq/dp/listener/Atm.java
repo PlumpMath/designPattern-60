@@ -26,7 +26,7 @@ public class Atm {
 
 		if (listeners.size() > 0)
 			for (DrawbackListener listener : listeners) {
-				listener.donotify(event);
+				listener.update(event);
 			}
 		else
 			Out.print("似乎没有人注册通知哦！");

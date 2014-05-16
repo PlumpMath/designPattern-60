@@ -24,13 +24,14 @@ public class MsgTest {
 
 		atm.addListener(new DrawbackListener() {
 			@Override
-			public void donotify(DrawbackEvent event) {
+			public void update(DrawbackEvent event) {
 				if (event.getNumber() >= 1000) {
 					Out.print("用户控制台通知您，你取了" + event.getNumber() + "钱");
 				}
 			}
 		});
 		atm.drawback(1300);
+
 	}
 
 }

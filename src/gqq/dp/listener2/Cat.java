@@ -44,6 +44,7 @@ public class Cat implements Observerable {
 	 */
 	public void cry() {
 		Out.print("喵喵咪……");
+
 		// 通知观察者
 		donotify();
 	}

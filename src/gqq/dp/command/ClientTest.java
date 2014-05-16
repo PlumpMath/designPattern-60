@@ -37,4 +37,18 @@ public class ClientTest {
 
 	}
 
+	@Test
+	public void TestMicro() {
+		Television tv = new Television();
+		Command opcmd = new OpenCommand(tv);
+		Command clcmd = new CloseCommand(tv);
+		Command recmd = new RebootCommand(tv);
+
+		MicroCommand cmd = new FirstCourseCmd(tv);
+		cmd.attach(opcmd);
+		cmd.attach(clcmd);
+		cmd.attach(recmd);
+		cmd.execute();
+	}
+
 }
